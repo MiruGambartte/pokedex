@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios';
 import { Card, Grid, Row, Text } from '@nextui-org/react';
+import { Navbar } from '../components/ui/Navbar';
 const index = () => {
   const [pokemons, setPokemons] = useState([])
 
@@ -20,6 +21,7 @@ const index = () => {
 
   return (
     <div>
+      <Navbar/>
       <h1>Mis {pokemons.length} pokemons</h1>
       <Grid.Container gap={2  }>
         {pokemons.map(pokemon => (

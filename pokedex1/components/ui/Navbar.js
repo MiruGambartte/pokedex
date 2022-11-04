@@ -1,7 +1,7 @@
-import { Link, Spacer } from '@nextui-org/react'
+import { Link, Spacer, Text } from '@nextui-org/react'
 import React from 'react'
-import Image from '@next/image'
-const Navbar = () => {
+//import Image from '@next/image'
+export const Navbar = () => {
     return(
         <div>
             <Link href='/'>
@@ -12,10 +12,22 @@ const Navbar = () => {
                oxedex!  
             </Text>
             </Link>
+            <Spacer css={{flex:1}}></Spacer>
+            <Link href='/'>
+            <Text color= "white" h3 sm= {undefined}>
+                Home
+            </Text>
+            </Link>
             <Spacer css={{flex: 1}}></Spacer>
             <Link href='/favoritos'>
             <Text color= "white" h3 sm= {undefined}>
-                favoritos
+                Favoritos
+            </Text>
+            </Link>
+            <Spacer css={{flex: 1}}></Spacer>
+            <Link href='/shop'>
+            <Text color= "white" h3 sm= {undefined}>
+                Tienda
             </Text>
             </Link>
         </div>
